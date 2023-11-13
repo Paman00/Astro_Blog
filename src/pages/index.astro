@@ -1,4 +1,5 @@
 ---
+import Greeting from '../components/Greeting';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "Página de inicio";
@@ -6,4 +7,5 @@ const pageTitle = "Página de inicio";
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>Mi impresionante subtítulo del blog</h2>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Buenas tardes"]} />
 </BaseLayout>
